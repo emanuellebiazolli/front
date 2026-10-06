@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* HEADER E MENU FIXO NO TOPO */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #b3b3b3;
+  min-height: 65px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul.menu-lista {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+nav a.ativo {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* PAINEL CENTRAL E CAIXAS */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.grid-caixas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.caixa-menu {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  padding: 24px;
+  width: 260px;
+  text-decoration: none;
+  color: #333333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+/* Destaque ao passar o mouse (sem movimento) */
+.caixa-menu:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border-color: #2563eb;
+}
+
+.caixa-menu h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #2563eb;
+}
+
+.caixa-menu p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.caixa-menu.sair h2 {
+  color: #d97706;
+}
