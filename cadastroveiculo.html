@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro dos veículos</title>
+    <link rel="stylesheet" href="cadastroveiculo.css">
 </head>
 <body>
-     <nav class="menu" aria-label="Menu principal">
-      <ul class="menu-lista">
-        <li><a href="paginainicial.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
-        <li><a href="cadastrocliente.html"><i class="fa-solid fa-user"></i>Cadastro Clientes</a></li>
-        <li><a href="cadastroveiculo.html"><i class="fa-solid fa-car"></i>Cadastro Veículos</a></li>
-        <li><a href="agendamento.html"><i class="fa-solid fa-calendar"></i>Agendamentos</a></li>
-        <li><a href="listarcliente.html"><i class="fa-solid fa-users"></i>Listar clientes</a></li>
-        <li><a href="listaragendamento.html"><i class="fa-solid fa-calendar-days"></i>Listar agendamentos</a></li>
-        <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sair</a></li>
-      </ul>
-    </nav>
+    <header>
+      <img src="Oficina3.png" alt="Logo">
+      <nav class="menu" aria-label="Menu principal">
+        <ul class="menu-lista">
+          <li><a href="paginainicial.html">Página Inicial</a></li>
+          <li><a href="cadastrocliente.html">Cadastro Clientes</a></li>
+          <li><a href="cadastroveiculo.html" class="ativo">Cadastro Veículos</a></li>
+          <li><a href="agendamento.html">Agendamentos</a></li>
+          <li><a href="listarcliente.html">Listar clientes</a></li>
+          <li><a href="listaragendamento.html">Listar agendamentos</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h1>Cadastro de Veículos</h1>
+
+            <form>
+                <label for="Marca">Marca</label>
+                <input type="text" id="Marca" name="Marca" placeholder="Digite a marca do veículo" required>
+
+                <label for="Modelo">Modelo</label>
+                <input type="text" id="Modelo" name="Modelo" placeholder="Digite o modelo do veículo" required>
+
+                <label for="Placa">Placa</label>
+                <input type="text" id="Placa" name="Placa" placeholder="Digite a placa do veículo" required>
+
+                <button type="submit">Cadastrar Veículo</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>

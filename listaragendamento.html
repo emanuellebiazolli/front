@@ -3,19 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro do cliente</title>
+    <title>Listar Agendamentos</title>
+    <link rel="stylesheet" href="listaragendamento.css">
 </head>
 <body>
-<nav class="menu">
-      <ul class="menu-lista">
-        <li><a href="paginainicial.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
-        <li><a href="cadastrocliente.html"><i class="fa-solid fa-user"></i>Cadastro Clientes</a></li>
-        <li><a href="cadastroveiculo.html"><i class="fa-solid fa-car"></i>Cadastro Veículos</a></li>
-        <li><a href="agendamento.html"><i class="fa-solid fa-calendar"></i>Agendamentos</a></li>
-        <li><a href="listarcliente.html"><i class="fa-solid fa-users"></i>Listar clientes</a></li>
-        <li><a href="listaragendamento.html"><i class="fa-solid fa-calendar-days"></i>Listar agendamentos</a></li>
-        <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sair</a></li>
-      </ul>
-    </nav>
+   <header>
+        <img src="Oficina3.png" alt="Logo">
+        <nav>
+            <ul class="menu-lista">
+                <li><a href="paginainicial.html">Página Inicial</a></li>
+                <li><a href="cadastrocliente.html" class="ativo">Cadastro Clientes</a></li>
+                <li><a href="cadastroveiculo.html">Cadastro Veículos</a></li>
+                <li><a href="agendamento.html">Agendamentos</a></li>
+                <li><a href="listarcliente.html">Listar clientes</a></li>
+                <li><a href="listaragendamento.html">Listar agendamentos</a></li>
+                <li><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Data Agendamento</th>
+            <th>Serviço</th>
+            <th>Alterações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2026-10-10</td>
+            <td>Troca</td>
+            <td>✏️🗑️</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>2026-10-11</td>
+            <td>Alinhar</td>
+              <td>✏️🗑️</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>2026-10-12</td>
+            <td>Revisão</td>
+              <td>✏️🗑️</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>

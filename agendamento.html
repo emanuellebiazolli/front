@@ -3,19 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro do cliente</title>
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="agendamento.css">
 </head>
 <body>
-   <nav class="menu" aria-label="Menu principal">
-      <ul class="menu-lista">
-        <li><a href="paginainicial.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
-        <li><a href="cadastrocliente.html"><i class="fa-solid fa-user"></i>Cadastro Clientes</a></li>
-        <li><a href="cadastroveiculo.html"><i class="fa-solid fa-car"></i>Cadastro Veículos</a></li>
-        <li><a href="agendamento.html"><i class="fa-solid fa-calendar"></i>Agendamentos</a></li>
-        <li><a href="listarcliente.html"><i class="fa-solid fa-users"></i>Listar clientes</a></li>
-        <li><a href="listaragendamento.html"><i class="fa-solid fa-calendar-days"></i>Listar agendamentos</a></li>
-        <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sair</a></li>
-      </ul>
-    </nav>
+    <header>
+      <img src="Oficina3.png" alt="Logo">
+      <nav class="menu" aria-label="Menu principal">
+        <ul class="menu-lista">
+          <li><a href="paginainicial.html"><i class="fa-solid fa-house"></i>Página Inicial</a></li>
+          <li><a href="cadastrocliente.html"><i class="fa-solid fa-user"></i>Cadastro Clientes</a></li>
+          <li><a href="cadastroveiculo.html"><i class="fa-solid fa-car"></i>Cadastro Veículos</a></li>
+          <li><a href="agendamento.html" class="ativo"><i class="fa-solid fa-calendar"></i>Agendamentos</a></li>
+          <li><a href="listarcliente.html"><i class="fa-solid fa-users"></i>Listar clientes</a></li>
+          <li><a href="listaragendamento.html"><i class="fa-solid fa-calendar-days"></i>Listar agendamentos</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h1>Novo Agendamento</h1>
+
+            <form id="form">
+                <label for="DataAgendamento">Data e horário</label>
+                <input type="datetime-local" id="DataAgendamento" name="DataAgendamento" required>
+
+                <label for="Servico">Serviço</label>
+                <input type="text" id="Servico" name="Servico" list="servicos" placeholder="Digite ou escolha o serviço" required>
+
+                <button type="submit">Agendar</button>
+                <p id="mensagem" class="mensagem"></p>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
